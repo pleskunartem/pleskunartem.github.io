@@ -1,0 +1,191 @@
+#img_h{
+  width: 700px;
+  padding-top:8px;
+  float: left;
+}
+#img_ht{
+  width: 300px;
+  padding-top:8px;
+  float: left;
+}
+header, footer {
+ background-color: #38b6ff;
+ padding: 10px;
+}
+main {
+ padding: 10px;
+ background-color: red;
+}
+.post {
+ background-color: #0320fc;
+ padding: 20px;
+ border-radius: 10px;
+ margin-bottom: 20px;
+ display: flex;
+}
+.post img {
+ margin: 20px;
+}
+.footer-columns {
+ display: flex;
+}
+.footer-column {
+ flex: 50%;
+ margin: 20px;
+}
+.comment {
+ background-color: #eba834;
+ padding: 20px;
+ border-radius: 10px;
+ margin-top: 10px;
+}
+.author {
+ margin-top: 0px;
+ margin-bottom: 10px;
+}
+.date {
+ color: silver;
+ margin-top: 0px;
+ margin-bottom: 10px;
+}
+
+#menu1{
+ position: relative; /*Положение элемента устанавливается относительно его исходного места*/
+ display: block;     /*Элемент показывается как блочный*/
+ width: 100%;
+ height: auto;
+ z-index: 10;
+}
+
+#menu1 ul{
+ position: relative;
+ display: block;
+ margin: 0px;      /*Устанавливает величину отступа от каждого края элемента*/
+ padding: 0px;     /*Устанавливает значение полей вокруг содержимого элемента*/
+ width: 100%;
+ height: auto;
+ list-style: none;
+}
+
+#menu1 > ul::after{ /*используется для вывода желаемого текста после содержимого элемента*/
+ display: block;
+ width: 100%;
+ height: 0px;
+ clear: both;     /*Отменяет обтекание элемента одновременно с правого и левого края*/
+ content: " ";
+}
+#menu1 ul li{
+ position: relative;
+ display: block;
+ float: left;     /*Выравнивает элемент по левому краю*/
+ width: auto;
+ height: auto;
+}
+#menu1 ul li a{
+ display: block;
+ padding: 9px 25px 0px 25px;
+ font-size: 14px;
+ line-height: 1.3em;
+ text-decoration: none;
+ font-weight: bold;
+ text-transform: uppercase; /*Все символы текста становятся прописными (верхний регистр)*/
+ height: 36px;
+ box-sizing: border-box; /*Свойства width и height включают в себя значения полей и границ, но не отступов (margin)*/
+ color: white;
+}
+#menu1 ul li ul{
+ position: absolute; /*Указывает, что элемент абсолютно позиционирован, 
+                      при этом другие элементы отображаются на веб-странице 
+					  словно абсолютно позиционированного элемента и нет*/
+ top: 36px;
+ left: 0px;
+ display: none;
+ width: 200px;
+<head> 
+		<link rel="stylesheet" href="style.css">
+		<title>my syte</title>
+		<!--підключення плагіну-->
+		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+		<!----------------------->
+</head> 
+<header>
+  <img id="img_h" src=https://cdn2.unrealengine.com/14br-consoles-1920x1080-wlogo-1920x1080-432974386.jpg alt="Logo">
+  <nav id="menu1">
+    <ul>
+      <li><a href="#m1">Dota 2</a></li>
+      <li><a href="https://codepen.io/dima-kloyn/pen/ExXEEmb">CS GO</a></li>
+      <li><a href="https://codepen.io/dima-kloyn/pen/MWoVVMO">MENU</a>
+        <ul>
+          
+        </ul>
+      </li>
+   
+    </ul>
+  </nav>
+</header>
+<main>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NgYSZ5giHmM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div>
+    <div class="post">
+      <img height="210" src=https://cdn2.unrealengine.com/Fortnite%2Fch2-s2%2FKeyArt-3840x2138-00922efab9e3d17fa52e6e2cc086b5650fff41fc.jpg alt="Card image cap">
+      <div>
+        <h3>Fortnite</h3>
+        <p> Это одна из самых популярных игр мира. </p>
+        <a href="#"></a>
+      </div>
+    </div>
+	<!--блок з зображеннями для прокрутки-->
+	<div class="carousele">
+		<!--цей блок копіювати щоб додати інших зображень-->
+		<div class="carousele-element">
+			<center>
+				
+		</div>
+			</center>
+		<!------------------------------------------------->
+		<div class="carousele-element">
+			<center>
+				<img src=https://app-time.ru/uploads/posts/inner/2020/08/200820201514378f0.jpg/>
+		</div>
+			</center>
+	</div>
+	<!------------------------------------->
+    <h3>Комментарии (2):</h3>
+
+    <div class="comment" id="sub-comment">
+      <h4 class="author">Сашка Какашка 2013</h4>
+      <h5 class="date">at 19.09.2021</h5>
+     Ігра афігенайа рікаминдуйу всім
+    
+    </div>
+
+    <div class="comment" id="sub-comment" style="margin-left: 25px;">
+      <h4 class="author">Sweet_lana1967</h4>
+      <h5 class="date">at 7:00 01.01.1272</h5>
+     Мой сын начал играть в эту игру и стал много материться, удалите.
+    </div>
+	
+</main>
+<footer>
+  <div>
+    <div>
+      <div>
+        
+      <div class="footer-columns">
+        <div class="footer-column">
+          <h3>Об игре</h3>
+          <p>Fortnite — это кооперативная песочница на выживание, основными механиками которой являются исследование, сбор ресурсов, строительство укрепленных зданий и борьба с волнами наступающих зомби. ... Строительство является основной механикой, при этом в игре «уйма лута».</p>
+        </div>
+        <div class="footer-column">
+          <h3>Напишите мне</h3>
+          <p> если вы заинтересованы в этой игре и ищете тиммейтов, то напишите мне на электронную почту.<br><strong>Эмейл:
+              <a href="#">billyherringtonwee@gmail.com</a></strong>
+          </p>
+</footer>
+<!--підключення скриптів-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<!------------------------>
